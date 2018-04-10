@@ -1,4 +1,4 @@
-class HauntedHouse < ActiveRecord::Migration
+class HauntedHouse < ActiveRecord::Migration[4.2]
 
   def change
     create_table :haunted_houses do |t|
@@ -12,8 +12,4 @@ class HauntedHouse < ActiveRecord::Migration
       t.text :long_description
     end
   end
-
-
-
-
 end
